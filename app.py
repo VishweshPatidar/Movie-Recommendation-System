@@ -4,14 +4,7 @@ import pandas as pd
 import requests
 
 def fetch_poster(movie_id) :
-    url = "https://api.themoviedb.org/3/movie/{}?language=en-US".format(movie_id)
-
-    headers = {
-        "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NjI3NTM0ZmM4NmIwNmYzNWQyYTFjODAzMzk2ZDYzNSIsIm5iZiI6MTczNDE1ODc3NC44MTEsInN1YiI6IjY3NWQyOWI2NDY1YWI1YjNmNmIwMjM1ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-rQY3ul1VrflHDQCJD9WLTuRn3_rDVvH7FjZHzQndlI"
-    }
-
-    response = requests.get(url, headers=headers)
+    #provide your own api key from tmdb api 
 
     # print(response.text)
     # response = requests.get('https://api.themoviedb.org/3/movie/{}?language=en-US'.format(movie_id))
